@@ -6,7 +6,8 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/fend", (req, res) => {
 
-res.sendFile(path.join(__dirname, "public/index.html"));
+res.sendFile("/public", "/index.html");
+//res.sendFile(path.join(__dirname, "public/index.html"));
 //res.render("public/index.html");
 
 }); 

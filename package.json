@@ -3,7 +3,8 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "devws": "node index.js"
+    "devws": "node index.js",
+    "devfe": "node statichtml.js"
   },
   "keywords": [],
   "author": "",
