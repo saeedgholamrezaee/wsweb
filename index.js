@@ -6,19 +6,16 @@ app.use(express.static(path.join(__dirname, "public")));
 
 app.get("/fend", (req, res) => {
 
-res.sendFile("/public", "/index.html");
-//res.sendFile(path.join(__dirname, "public/index.html"));
-//res.render("public/index.html");
+res.sendFile(path.join(__dirname, "/public/mltform.html"));
 
 }); 
 
 
-app.get("/", (req, res) => {
+app.get("/bend", (req, res) => {
     res.send("express js web framework");
 });
 
-
-app.get("/dir", (req, res) => {
+app.get("/hcode", (req, res) => {
     res.send(`<!DOCTYPE html>
 <html lang="en">
 <head>
@@ -52,6 +49,6 @@ app.get("/dir", (req, res) => {
 `);
 });
 
-app.listen(5700, function(){
-    console.log("web server run on port: 5700 ");
+app.listen(5500, function(){
+    console.log("web server run on port: 5500 ");
 });

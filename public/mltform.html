@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Form Example</title>
+</head>
+<body>
+  <h1>Form Tag Examples</h1>
+
+  <!-- Text input -->
+  <form action="/submit-text" method="POST">
+    <h3>Text Input</h3>
+    <label for="username">Username:</label>
+    <input type="text" id="username" name="username">
+    <button type="submit">Submit</button>
+  </form>
+
+  <hr>
+
+  <!-- Password input -->
+  <form action="/submit-password" method="POST">
+    <h3>Password Input</h3>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password">
+    <button type="submit">Submit</button>
+  </form>
+
+  <hr>
+
+  <!-- Radio buttons -->
+  <form action="/submit-gender" method="POST">
+    <h3>Radio Buttons</h3>
+    <label><input type="radio" name="gender" value="male"> Male</label>
+    <label><input type="radio" name="gender" value="female"> Female</label>
+    <button type="submit">Submit</button>
+  </form>
+
+  <hr>
+
+  <!-- Checkboxes -->
+  <form action="/submit-hobbies" method="POST">
+    <h3>Checkboxes</h3>
+    <label><input type="checkbox" name="hobbies" value="reading"> Reading</label>
+    <label><input type="checkbox" name="hobbies" value="sports"> Sports</label>
+    <label><input type="checkbox" name="hobbies" value="coding"> Coding</label>
+    <button type="submit">Submit</button>
+  </form>
+
+  <hr>
+
+  <!-- Select dropdown -->
+  <form action="/submit-country" method="POST">
+    <h3>Select Dropdown</h3>
+    <label for="country">Choose your country:</label>
+    <select name="country" id="country">
+      <option value="iran">Iran</option>
+      <option value="usa">USA</option>
+      <option value="japan">Japan</option>
+    </select>
+    <button type="submit">Submit</button>
+  </form>
+
+  <hr>
+
+  <!-- File upload -->
+  <form action="/upload-file" method="POST" enctype="multipart/form-data">
+    <h3>File Upload</h3>
+    <label for="file">Choose a file:</label>
+    <input type="file" name="file" id="file">
+    <button type="submit">Upload</button>
+  </form>
+
+</body>
+</html>
+
